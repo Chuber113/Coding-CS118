@@ -1,49 +1,64 @@
-#Text pg. 45 Exercise 2.11(b) :
+# Solving 3.18
 
-AvgAge = round((17*9+24*10+21*11+27*12)/89.0) #finding avg of given numbers
-print(f"The average age is: {AvgAge}") #printing the result
+a = 3
+b = 4
+c = 5
 
-#Text pg. 45 Exercise 2.11(d) :
+# (a)
+if a < b:
+    print("OK")
 
-import math #importing math to use floor function later
+# (b)
+if c < b:
+    print("OK")
 
-numTime = 4356/61 #math to find exactly how many times 61 fits into 4356
-numWhole = math.floor(numTime) #Finds lower val so that its a whole number
+# (a)
+if a + b == c:
+    print("OK")
 
-print(f"The number of times 61 goes into 4356 = {numWhole}")
-
-#Text pg. 46 Exercise 2.14(b) :
-
-s = "goodbye"  #Told me to create and assign s
-
-#Bool expression and a little if statement and print statement to verify
-if s[6] == "g":
-    print("The seventh character of var 's' is g!")
-else:
-    print("The seventh character of var 's' isn't g.")
+# (a)
+if a ** 2 + b ** 2 == c ** 2:
+    print("OK")
 
 
-#Text pg. 46 Exercise 2.14(d) :
 
-s = "goodbye" #Told me to create and assign s
+# Solving 3.22
 
-#Bool expression and a little if statement and print statement to verify
-if s[-2] == "x":
-    print("The second from last character of var 's' is x!")
-else:
-    print("The second from last character of var 's' isn't x.")
+lst = [2, 3, 69, 4, 5, 6, 7, 8, 9, 16]  # Example list, values can be changed to anything
+
+for i in lst:  # Runs through vals of lst and determines if they are squared whether or not they are divisible by 8
+    if (i ** 2) % 8 == 0:
+        print({i})
 
 
-#Text pg. 46 Exercise 2.16(e) :
 
-#Assigning names to vars
-first = "Bob"
-middle = "John"
-last = "Smith"
+# Solving 3.23
 
-#concatination of names to full name
-fullname = first + " " + middle + " " + last
+# (a) 0 1
+for i in range(2):
+    print(i, end=" ")
+print("\n")  # Just to make it easier to read returns new line after each problem part
 
-#printing all the vars from the prob in a nice format
-print(f"The fullname is: {fullname} \n The first name is: {first} \n The middle name is: {middle} \
-\n The last name is: {last}")
+# (b) 0
+for i in range(1):
+    print(i, end=" ")
+print("\n")
+
+# (c) 3 4 5 6
+for i in range(3, 7):
+    print(i, end=" ")
+print("\n")
+
+# (d) 1
+for i in range(1, 2):
+    print(i, end=" ")
+print("\n")
+
+# (e) 0 3
+for i in range(0, 4, 3):
+    print(i, end=" ")
+print("\n")
+
+# (f) 5 9 13 17 21
+for i in range(5, 22, 4):
+    print(i, end=" ")
